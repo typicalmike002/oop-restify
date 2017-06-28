@@ -1,11 +1,11 @@
 const Route = require('../route').prototype;
 
-module.exports = function(restify, instance) {
+module.exports = function(restify, server) {
 
     function UserRoute() {
         Route.constructor.apply(this, arguments);
-        instance.get(this.path, this.getUser);
-        instance.post(this.path, this.postUser);
+        server.get(this.path, this.getUser);
+        server.post(this.path, this.postUser);
     }
     
     UserRoute.prototype = Object.create(Route);

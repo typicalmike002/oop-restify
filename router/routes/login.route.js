@@ -1,10 +1,10 @@
 const Route = require('../route').prototype;
 
-module.exports = function (restify, instance) {
+module.exports = function (restify, server) {
 
     function LoginRoute() {
         Route.constructor.apply(this, arguments);
-        instance.get(this.path, this.getLogin);
+        server.get(this.path, this.getLogin);
     }
     
     LoginRoute.prototype = Object.create(Route);
