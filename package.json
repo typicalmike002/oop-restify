@@ -1,0 +1,23 @@
+{
+  "name": "oop-restify",
+  "version": "1.0.0",
+  "description": "Example of routes formatted as objects in a restify application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n/a.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n/a/issues"
+  },
+  "homepage": "https://github.com/n/a#readme",
+  "dependencies": {
+    "restify": "^5.0.0"
+  }
+}
